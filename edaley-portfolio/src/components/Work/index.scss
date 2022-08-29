@@ -1,4 +1,41 @@
 .work-page {
-  margin: auto;
-  text-align: center;
+  height: 100vh;
+  width: 100vw;
+
+    
 }
+
+.grid {
+  transform: translateY(20%);
+  padding: 0;
+  position: relative;;
+  height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  
+    /* Change values 👇 to experiment*/
+    align-items:center;
+    justify-content: center;
+  }
+ a {
+  margin: 5px 10px;
+  padding: 3px;
+ }
+
+ .hide {
+   display: none;
+ }
+
+ a:hover {
+   box-shadow: 4px 4px 8px #830101;
+ }
+  .row1 {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+   
+    
+  }
