@@ -4,11 +4,11 @@ import AnimatedLetters from '../AnimatedLetters';
 import './index.scss'
 
 const Home = () => {
-const [letterClass, setLetterClass] = useState('text-animate')
+const [letterClass] = useState('text-animate')
 const nameArray = ['e', 'l', 'y', ' ', 'd', 'a', 'l', 'e', 'y']
 
   return (
-    <div className="container home-page">
+    <div className=" home-page">
       <div className="text-zone">
         <h1> 
           <span className='name'>

@@ -1,19 +1,11 @@
 .home-page {
-
-  .text-zone {
-    position: absolute;
-    left: 10%;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 80%;
-    max-height: 90%;
-    text-align: center;
-    
-  }
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  height: 100%;
 
   h1 {
     font-size: 48px;
-    margin: 0;
     font-family: 'Righteous';
     font-weight: 400;
     overflow: hidden;
@@ -24,18 +16,14 @@
       background-color: transparent;
       font-style: italic;
       font-size: 75px;
-      color: #bbdb04;
+      color: #db0404;
       font-family: 'Press Start 2P';
-      height: auto;
-     
     }
   }
    
   
   h2 {
     opacity: 0;
-    margin-top: 20px;
-    margin-bottom: 20px;
     font-weight: 400;
     font-size: 14px;
     font-family: 'Anonymous Pro';
@@ -50,12 +38,12 @@
     margin-top: 25px;
     font-weight: 400;
     font-size: 25px;
-    font-family: 'Anonymous Pro';
+    font-family: 'Press Start 2P', monospace;
     animation: fadeIn 1s 2.3s both;
     color: #3a2201;
     background-color: #bbdb04;
     padding: 5px;
-    width: 25%;
+    width: 30%;
     text-align: center;
     text-decoration: none;
   }
