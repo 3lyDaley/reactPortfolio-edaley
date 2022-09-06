@@ -1,5 +1,3 @@
-import './index.scss'
-
 import AnimatedLetters from '../AnimatedLetters';
 import { useState } from 'react';
 

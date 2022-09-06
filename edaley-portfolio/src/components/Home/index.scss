@@ -1,17 +1,19 @@
 .home-page {
+
+
+.text-zone {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  justify-content: right;
-  height: 100%;
+  width: 100vw;
+  margin-top: 20vh;
 
   h1 {
-    font-size: 48px;
-    font-family: 'Righteous';
     font-weight: 400;
     overflow: hidden;
-    color: #3a2201;
-    
-    
+    padding: 5px;
+
     .name{
       background-color: transparent;
       font-style: italic;
@@ -20,19 +22,22 @@
       font-family: 'Press Start 2P';
     }
   }
-   
   
   h2 {
+    text-align: center;
     opacity: 0;
-    font-weight: 400;
-    font-size: 14px;
+    font-weight: bold;
+    font-size: 30px;
     font-family: 'Anonymous Pro';
     letter-spacing: 1px;
     animation: fadeIn 1s 2s both;
     color:#3a2201;
-   
+    
   }
-
+  .scrollText {
+    display: none;
+  }
+  
   .flat-button {
     opacity: 0;
     margin-top: 25px;
@@ -40,15 +45,65 @@
     font-size: 25px;
     font-family: 'Press Start 2P', monospace;
     animation: fadeIn 1s 2.3s both;
-    color: #3a2201;
+    color: #db0404;
     background-color: #bbdb04;
     padding: 5px;
-    width: 30%;
+    width: 30vw;
     text-align: center;
     text-decoration: none;
   }
-
+  
   .flat-button:hover {
     transform: skewX(-25deg);
+  }
+}
+}
+
+@media only screen and (max-width: 820px) {
+  .home-page {
+    .text-zone {
+      h1 {
+        .name{
+          font-size: 40px;
+        }
+      }
+      .scroll {
+        display: flex;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+        width: 100%;
+        overflow: hidden;
+        h2 {
+          opacity: 1;
+          font-size: 24px;
+          font-weight: bolder;
+          display: flex;
+          flex-shrink: 0;
+          align-items: center;
+          animation: slide-left 20s linear infinite;
+          background: none;
+        }
+        .scrollText {
+          display: inline-block;
+        }
+        @keyframes slide-left {
+          0% {
+            -webkit-transform: translate3d(-100%, 0, 0);
+              transform: translate3d(0, 0, 0);
+            }
+          
+            100% {
+              -webkit-transform: translate3d(-110%, 0, 0);
+              transform: translate3d(-100%, 0, 0);
+            }
+      }
+    }
+
+
+      .flat-button {
+        font-size: 14px;
+        animation: fadeIn 1s both;
+      }
+    }
   }
 }

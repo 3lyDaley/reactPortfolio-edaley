@@ -23,12 +23,8 @@ const Contact = () => {
   }
 
   return (
-    <>
-        
-          <div className='selfie'>
-            <img src={self} width='750px' alt="Ely sitting on a brown chair smiling"></img>
-          </div>
-    <div className=' contact-page'>
+    <>     
+    <div className='contact-page'>
       <div className='text-zone'>
         <h1> 
           <AnimatedLetters letterClass={letterClass}

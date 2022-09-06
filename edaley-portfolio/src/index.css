@@ -2,39 +2,23 @@ html {
   font-size: 62.5%;
 }
 .App {
-height: 100vh;
-width: 100vw;
+  width: 100vw;
+  max-height: 100vh;
 }
+
 body {
+  max-height: 100%;
   margin: 0;
   font-family: 'Anonymous Pro', monospace;
   color: #830101;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: radial-gradient(rgb(244, 243, 239) 40%, rgb(250, 238, 205) 80%, rgb(245, 243, 237) 120%);
-  background-size: 200% 100%;
-  display: block;
-  animation: gradient 240s  ease-in-out infinite;
-  animation-direction: alternate-reverse;
-  height: 100vh;
   background-image: url('../src/assets/images/background.png');
-  
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-attachment: fixed; 
+  overflow-x: hidden;
 }
 
-@keyframes gradient {
-  0% {
-    background-position: 0%;
-    background-size: 100%
-  }
 
-  50% {
-    background-position: 90%;
-    background-size: 120%
-  }
-
-  100% {
-    background-position: 0%;
-    background-size: 100%
-  }
-}
 

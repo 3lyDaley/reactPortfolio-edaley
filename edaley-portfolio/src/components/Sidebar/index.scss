@@ -1,6 +1,4 @@
 .nav-bar {
- padding: auto;
- margin: auto;
   z-index: 3;
 }
 
@@ -8,24 +6,15 @@ nav {
   display: flex;
   justify-content: center;
   text-align: center;
-  position: absolute;
-  height: 210px;
-  top: 20%;
-  margin-top: -120px;
-  width: 100%;
-  padding-left: auto;
+  //width: 100vw;
 }
 
 .navlink {
   color:#3a2201;
   font-size: 25px;
-  display: block;
-  line-height: 40px;
-  height: 40px;
-  position: relative;
+  line-height: 35px;
   text-decoration: none;
   background-color: #bbdb04;
-  padding: 0 10px;
 
 }
 
@@ -38,6 +27,7 @@ i {
   background-color:#830101;
   color:#bbdb04
 }
+
 
 
 
